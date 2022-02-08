@@ -1,0 +1,104 @@
+h1 {
+  text-align: center;
+}
+
+.mainButton {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.mainButton:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: darkgreen;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.mainButton:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: green;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.mainButton:hover {
+  color: #fff;
+}
+.mainButton:hover:before {
+  width: 100%;
+}
+
+.title {
+  color: green;
+  font-size: 64px;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.content {
+  text-align: center;
+  box-shadow: 0px 1px 1px rgb(153, 153, 153);
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.signInButton {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+.selectedText {
+  font-size: 24px;
+}
+
+.resImage {
+  height: 200px;
+  width: 200px;
+  margin-inline: 20px;
+}
+
+.restaurant {
+  /* margin: 25px; */
+  margin-left: 20px;
+  padding: 20px;
+  border-style: double;
+  border-width: 5px;
+}
+
+/* .Restaurant {
+  border-style: groove;
+  border-width: 10px;
+} */
+
+.resElements {
+  margin-inline: 20px;
+}
+
+.App {
+  background-image: url("https://www.bulletproof.com/wp-content/uploads/2020/12/header-vegetarian-keto-iStock-1179270765.jpg");
+  background-size: cover;
+}
